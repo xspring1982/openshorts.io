@@ -1,8 +1,19 @@
 # OpenShorts.io — open source AI video clipper
 
 Turn long videos (podcasts, talks, interviews, streams) into vertical short
-clips with face tracking, animated captions and a hook line, on your own
-machine or on serverless GPUs.
+clips with face tracking, animated captions and a hook line: a free,
+MIT-licensed alternative to OpusClip.
+
+**Two ways to use it:**
+
+- **Online, no install:** [openshorts.io](https://openshorts.io). Paste a
+  YouTube link and get captioned 9:16 Shorts. The free plan covers
+  15 minutes of video a month, no card needed; paid plans start at
+  $11.90 a month ([pricing](https://openshorts.io/pricing)). There is also a
+  hosted [API and MCP server](https://openshorts.io/api) for Claude, Cursor
+  and other agents.
+- **Self-hosted, free:** this repository, with Docker. No watermark, no
+  minute cap; you bring a Gemini API key (see [Quick start](#quick-start-docker)).
 
 This is the OpenShorts.io open source repository: the self-hostable
 clipping pipeline behind [OpenShorts.io](https://openshorts.io), maintained
@@ -39,7 +50,7 @@ You need Docker with Docker Compose and a
 the moment picker at a local OpenAI-compatible LLM (see below).
 
 ```bash
-git clone https://github.com/xspring1982/openshorts-oss.git openshorts && cd openshorts
+git clone https://github.com/xspring1982/openshorts.io.git openshorts && cd openshorts
 cp .env.example .env          # optional: S3 backup, GPU, the options above
 docker compose up --build
 ```

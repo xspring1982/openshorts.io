@@ -49,4 +49,4 @@ paid feature" (2026-11-18).
   stands in for the queue policy, and tests that need it are skipped.
 - The workflow that publishes upstream's CLI to PyPI.
 
-[0.1.0]: https://github.com/xspring1982/openshorts-oss/releases/tag/v0.1.0
+[0.1.0]: https://github.com/xspring1982/openshorts.io/releases/tag/v0.1.0
